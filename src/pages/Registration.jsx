@@ -71,9 +71,8 @@ export const Registration = () => {
                 <input
                   id="reg_name"
                   type="text"
-                  className={`block w-full rounded-lg border py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${
-                    errors.name ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
-                  }`}
+                  className={`block w-full rounded-lg border py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${errors.name ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
+                    }`}
                   placeholder="John Doe"
                   {...registerForm('name', {
                     required: 'Full name is required',
@@ -101,9 +100,8 @@ export const Registration = () => {
                 <input
                   id="reg_email"
                   type="email"
-                  className={`block w-full rounded-lg border py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${
-                    errors.email ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
-                  }`}
+                  className={`block w-full rounded-lg border py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${errors.email ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
+                    }`}
                   placeholder="john@example.com"
                   {...registerForm('email', {
                     required: 'Email is required',
@@ -131,9 +129,8 @@ export const Registration = () => {
                 <input
                   id="reg_phone"
                   type="tel"
-                  className={`block w-full rounded-lg border py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${
-                    errors.phone ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
-                  }`}
+                  className={`block w-full rounded-lg border py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${errors.phone ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
+                    }`}
                   placeholder="+1 (555) 000-0000"
                   {...registerForm('phone', {
                     required: 'Phone number is required',
@@ -161,9 +158,8 @@ export const Registration = () => {
                 <input
                   id="reg_password"
                   type={showPassword ? 'text' : 'password'}
-                  className={`block w-full rounded-lg border py-3 pl-10 pr-10 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${
-                    errors.password ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
-                  }`}
+                  className={`block w-full rounded-lg border py-3 pl-10 pr-10 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${errors.password ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
+                    }`}
                   placeholder="••••••••"
                   {...registerForm('password', {
                     required: 'Password is required',

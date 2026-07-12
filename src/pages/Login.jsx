@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { Mail, Lock, Eye, EyeOff, LogIn, Send } from 'lucide-react';
+import { Mail, Lock, Eye, EyeOff, LogIn, Send, ArrowLeft } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 export const Login = () => {
@@ -98,9 +98,8 @@ export const Login = () => {
                   id="email"
                   type="email"
                   autoComplete="email"
-                  className={`block w-full rounded-lg border py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${
-                    errors.email ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
-                  }`}
+                  className={`block w-full rounded-lg border py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${errors.email ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
+                    }`}
                   placeholder="name@example.com"
                   {...registerForm('email', {
                     required: 'Email address is required',
@@ -128,9 +127,8 @@ export const Login = () => {
                   id="password"
                   type={showPassword ? 'text' : 'password'}
                   autoComplete="current-password"
-                  className={`block w-full rounded-lg border py-3 pl-10 pr-10 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${
-                    errors.password ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
-                  }`}
+                  className={`block w-full rounded-lg border py-3 pl-10 pr-10 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-850 dark:text-white dark:border-gray-750 ${errors.password ? 'border-red-500 ring-red-500' : 'border-gray-300 dark:border-gray-700'
+                    }`}
                   placeholder="••••••••"
                   {...registerForm('password', {
                     required: 'Password is required',
@@ -198,6 +196,14 @@ export const Login = () => {
               )}
             </button>
           </div>
+
+          <div className='flex'>
+            <Link to="/" className='bg-indigo-600 text-center text-white p-2 font-bold rounded-lg cursor-pointer mx-auto flex items-center'>
+              <ArrowLeft className="h-4 w-4" /> Go Back
+            </Link>
+          </div>
+
+
         </form>
 
         {/* Resend Verification Segment */}
