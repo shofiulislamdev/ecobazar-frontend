@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { User, Mail, Phone, Lock, Eye, EyeOff, UserPlus } from 'lucide-react';
+import { User, Mail, Phone, Lock, Eye, EyeOff, UserPlus, ArrowLeft } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 export const Registration = () => {
@@ -205,6 +205,11 @@ export const Registration = () => {
                 </span>
               )}
             </button>
+          </div>
+          <div className='flex'>
+            <Link to="/" className='text-center text-indigo-600 font-semibold cursor-pointer mx-auto flex items-center'>
+              <ArrowLeft className="h-4 w-4" /> Go Back
+            </Link>
           </div>
         </form>
       </div>

@@ -198,7 +198,7 @@ export const Login = () => {
           </div>
 
           <div className='flex'>
-            <Link to="/" className='bg-indigo-600 text-center text-white p-2 font-bold rounded-lg cursor-pointer mx-auto flex items-center'>
+            <Link to="/" className='text-center text-indigo-600 font-semibold cursor-pointer mx-auto flex items-center'>
               <ArrowLeft className="h-4 w-4" /> Go Back
             </Link>
           </div>
