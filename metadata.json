@@ -1,0 +1,6 @@
+{
+  "name": "Ecommerce Frontend",
+  "description": "A modular, production-ready e-commerce frontend built with React, Tailwind CSS, React Router, Axios, Context API, and React Hook Form.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
