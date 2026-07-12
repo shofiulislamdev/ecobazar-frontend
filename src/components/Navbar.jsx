@@ -39,7 +39,7 @@ export const Navbar = () => {
               <span className="text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30 p-1.5 rounded-lg">
                 <ShoppingBag className="h-6 w-6" />
               </span>
-              <span>E-Shop</span>
+              <span className='text-emerald-500'>ECO<span className='text-red-500'>BAZAR</span></span>
             </Link>
 
             {/* Desktop Navigation Links */}

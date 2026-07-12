@@ -47,7 +47,7 @@ export const Footer = () => {
         {/* Brand Column */}
         <div className="space-y-4">
           <Link to="/" className="text-2xl font-black tracking-tight text-white flex items-center gap-2">
-            <span className="text-indigo-400">E</span>Shop
+            <span className="text-green-500">ECO</span><span className='text-red-500'>BAZAR</span>
           </Link>
           <p className="text-sm text-gray-400 leading-relaxed">
             Discover a curated experience of premium electronics, lifestyle accessories, and apparel designed with contemporary aesthetics.
