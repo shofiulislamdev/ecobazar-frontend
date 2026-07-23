@@ -28,58 +28,7 @@ import { Footer } from '../components/Footer';
 import { Loading } from '../components/Loading';
 import { axiosInstance } from '../api/axiosConfig';
 import { useCart } from '../context/CartContext';
-
-// Premium high-fidelity presets if the Mongo server has not been seeded yet
-const PRESET_PRODUCTS = [
-  {
-    _id: 'p1',
-    name: 'AeroSound Pro Noise-Cancelling Headphones',
-    description: 'Immersive sound engineering with custom magnetic dynamic drivers and 45-hour active battery life.',
-    price: 299,
-    category: 'electronics',
-    images: ['https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=60'],
-    stock: 12,
-    ratings: 4.8,
-    numReviews: 124,
-    createdAt: new Date().toISOString()
-  },
-  {
-    _id: 'p2',
-    name: 'ChronoClassic Obsidian Minimalist Watch',
-    description: 'Precision Japanese quartz movement housed in scratch-resistant premium sapphire glass and surgical steel.',
-    price: 189,
-    category: 'accessories',
-    images: ['https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=800&auto=format&fit=crop&q=60'],
-    stock: 8,
-    ratings: 4.9,
-    numReviews: 92,
-    createdAt: new Date().toISOString()
-  },
-  {
-    _id: 'p3',
-    name: 'Vanguard Premium Waterproof Backpack',
-    description: 'Weatherproof military-grade ballistic nylon outer casing with intelligent 16-inch laptop chamber allocation.',
-    price: 110,
-    category: 'accessories',
-    images: ['https://images.unsplash.com/photo-1581605405669-fcdf81165afa?w=800&auto=format&fit=crop&q=60'],
-    stock: 20,
-    ratings: 4.7,
-    numReviews: 215,
-    createdAt: new Date().toISOString()
-  },
-  {
-    _id: 'p4',
-    name: 'BreezeFit Knit Performance Running Sneakers',
-    description: 'Engineered lightweight matrix mesh upper body matched with nitrogen-infused hyper-rebound sole systems.',
-    price: 145,
-    category: 'apparel',
-    images: ['https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=800&auto=format&fit=crop&q=60'],
-    stock: 15,
-    ratings: 4.6,
-    numReviews: 180,
-    createdAt: new Date().toISOString()
-  }
-];
+import { PRESET_PRODUCTS } from '../data/products';
 
 export const Home = () => {
   const { addToCart } = useCart();

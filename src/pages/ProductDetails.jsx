@@ -23,75 +23,7 @@ import { Loading } from '../components/Loading';
 import { axiosInstance } from '../api/axiosConfig';
 import { useCart } from '../context/CartContext';
 import { toast } from 'react-toastify';
-
-const PRESET_PRODUCTS = [
-  {
-    _id: 'p1',
-    name: 'AeroSound Pro Noise-Cancelling Headphones',
-    description: 'Immersive sound engineering with custom magnetic dynamic drivers and 45-hour active battery life.',
-    price: 299,
-    discountPrice: 249,
-    category: 'electronics',
-    images: [
-      'https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=60',
-      'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=800&auto=format&fit=crop&q=60'
-    ],
-    stock: 12,
-    ratings: 4.8,
-    numReviews: 124,
-    sku: 'SKU-AERO-PRO-01',
-    createdAt: new Date().toISOString()
-  },
-  {
-    _id: 'p2',
-    name: 'ChronoClassic Obsidian Minimalist Watch',
-    description: 'Precision Japanese quartz movement housed in scratch-resistant premium sapphire glass and surgical steel.',
-    price: 189,
-    category: 'accessories',
-    images: [
-      'https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=800&auto=format&fit=crop&q=60',
-      'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=60'
-    ],
-    stock: 8,
-    ratings: 4.9,
-    numReviews: 92,
-    sku: 'SKU-CHRONO-OBS-02',
-    createdAt: new Date().toISOString()
-  },
-  {
-    _id: 'p3',
-    name: 'Vanguard Premium Waterproof Backpack',
-    description: 'Weatherproof military-grade ballistic nylon outer casing with intelligent 16-inch laptop chamber allocation.',
-    price: 110,
-    discountPrice: 89,
-    category: 'accessories',
-    images: [
-      'https://images.unsplash.com/photo-1581605405669-fcdf81165afa?w=800&auto=format&fit=crop&q=60',
-      'https://images.unsplash.com/photo-1605647540924-852290f6b0d5?w=800&auto=format&fit=crop&q=60'
-    ],
-    stock: 20,
-    ratings: 4.7,
-    numReviews: 215,
-    sku: 'SKU-VAN-BACK-03',
-    createdAt: new Date().toISOString()
-  },
-  {
-    _id: 'p4',
-    name: 'BreezeFit Knit Performance Running Sneakers',
-    description: 'Engineered lightweight matrix mesh upper body matched with nitrogen-infused hyper-rebound sole systems.',
-    price: 145,
-    category: 'apparel',
-    images: [
-      'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=800&auto=format&fit=crop&q=60',
-      'https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=60'
-    ],
-    stock: 15,
-    ratings: 4.6,
-    numReviews: 180,
-    sku: 'SKU-BREEZE-RUN-04',
-    createdAt: new Date().toISOString()
-  }
-];
+import { PRESET_PRODUCTS } from '../data/products';
 
 export const ProductDetails = () => {
   const { id } = useParams();
